@@ -1,5 +1,18 @@
 [
   {  
+    "id": "A196",
+    "all": "all",
+    "title": "G.I. Joe: El Contraataque",
+    "genero": "Accion",
+    "categoria": "Pelicula",
+    "puntuacion": "6.7",
+    "fecha": "2013",
+    "resumen": "(Accíon, Aventura, Ciencia Ficción) - En esta ocasión, los G.I Joes no solo tendrán que luchar contra su enemigo mortal, Cobra, sino que además se verán obligados a lidiar con las amenazas de dentro del gobierno que ponen en peligro su propia existencia.Dirigida por Jon M. Chu, y producida por Lorenzo di Bonaventura y Brian Goldner, con un guión de Rhett Reese y Paul Wernick.",
+    "urlImg": "https://blogger.googleusercontent.com/img/a/AVvXsEjG-SL0i33_ZtTRhVJrBKCu4z0qpQjLqiQWr_yJay9L-GYAR_El_tGx5hDdqSCrg34eIgVyRvZTX8j1_amOYea27EtfrlQlixMcSRooxNu6-3N5yPRgxS23dWKPiZmktTCNE4zzyKrBhjgJqA2eq17ZpBGtAox_C2KFD8RsN7m4lmD8qVv4Y737aT0_=s439",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUm5dqLRMSuaeziPU9RXI2UCHXuib_BudpLF3rFfvEQOpJPfTcdYIu0p0aE2RMcz9pmnr0ZFwMIj5VOoGLhm_h5rz_f6TuWiLL7fMHU1RiXZanY8tE0uK78FYKzZCfV6e_1hiXg2F_tsIAi-YYurhF84AO8TKGDqoR3CCGui8Y8y19GZ1k5HNagGYe/s320/gijoe-review.jpg",
+    "linkVideo": "https://secoa20201.github.io/movies.com/peliculas/G.I. Joe El Contraataque.html"
+  },
+  {  
     "id": "A195",
     "all": "all",
     "title": "G.I. Joe: El Origen de Cobra",
