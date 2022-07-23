@@ -1,5 +1,18 @@
 [
   {  
+    "id": "A204",
+    "all": "all",
+    "title": "Fuera de Control",
+    "genero": "Accion",
+    "categoria": "Pelicula",
+    "puntuacion": "4.5",
+    "fecha": "2020",
+    "resumen": "(Acción, Drama) - Rachel que está por llegar tarde a su trabajo, se encuentra en el semáforo con un conductor que no avanza. Luego de darle un bocinazo, el hombre la seguirá para que le pida disculpas por su acción, pero al no recibir lo que él espera desata una furia descontrolada contra ella y todos los que se crucen en su camino.",
+    "urlImg": "https://blogger.googleusercontent.com/img/a/AVvXsEjaNIPECpiKEGdRtJGk6U1NupcmHPQ5DXcPu9q943_H1_oYrZhauArbeQ3SR9sb408OxKp7NfE6bBFa-9lQxFKYLYzWAJFe9Nr7JwV5lgqpIhykEbpiozV8gBFoho9OHYS4jC-VgKRRu3afkfEqmHGHxAhdN1QMCOTW0RUftHt01EJwnC1g7SlktuAv=s439",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuAxzoAiBVmamtaZXhwoC2X7EejvVZvJ_EhhE1W0sHMeTw86iGJ1FParaRXiXmpH9kZmkuc8EbmRYPt5QfWpvXRaJSfBGabmbkEgmD-6r_CSzlYpTbLDewiITMyG7S-8g8m70MGfFbJsSLbqB7kZ1FRApsr7HpGcdWeZ0dxERyA7F44RccPuCDFyvs/s320/317160_600x315.jpg",
+    "linkVideo": "https://secoa20201.github.io/movies.com/peliculas/Fuera de Control.html"
+  },
+  {  
     "id": "A203",
     "all": "all",
     "title": "Greenland: el último refugio",
