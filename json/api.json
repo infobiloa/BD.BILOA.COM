@@ -1,5 +1,18 @@
 [
   {  
+    "id": "A206",
+    "all": "all",
+    "title": "La caza",
+    "genero": "Terror",
+    "categoria": "Pelicula",
+    "puntuacion": "5.6",
+    "fecha": "2022",
+    "resumen": "(Terror) - Cuando el misterioso ataque de un animal deja un cuerpo mutilado en el bosque, un detective conservador de un pequeño pueblo debe contar con la ayuda de un entusiasta especialista en vida silvestre para descubrir la oscura e inquietante verdad que amenaza al pueblo.",
+    "urlImg": "https://blogger.googleusercontent.com/img/a/AVvXsEjWV3YxAVr7B7YfwHodmPmCmtstPyLYlsyUCYEJN1fiOS6xKVpyiz77K9N1kdaRcUkT7ARmqLzGCjV3LEZjl9FFoGBVndyh4G0zooto496zDMS8cIS4E7-LqjVdE19S4h2MocHfFb91uAOuA07AztxOo5cW3gVZ2wCI1GSjx1T2Kx06AzXJ_G4mbiay=s439",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3ldIvdDyWlESp-2bdBStoICvSnt05pSxowwuiJfSfvuxGA-UnUpbSfiYfL75Y5wQV6CeaVLKK8dEb31lM0-TUVm5Afhv5eppHe29OKH26GEyp0y8hSFYFfjV4ArO8sU4HF_WCTeOYSXuw5O5Lltlh2xPTiaD9z-8Pxst7jqYumVSyDIjQ-z51DZe1/s320/kvhrltQIRp1u84ao9uj52YPaWNY.jpg",
+    "linkVideo": "https://secoa20201.github.io/movies.com/peliculas/La caza.html"
+  },
+  {  
     "id": "A205",
     "all": "all",
     "title": "La masacre de Texas",
