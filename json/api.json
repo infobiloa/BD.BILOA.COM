@@ -1,5 +1,18 @@
 [
   {  
+    "id": "A202",
+    "all": "all",
+    "title": "La Revolución",
+    "genero": "Accion",
+    "categoria": "Serie",
+    "puntuacion": "6.9",
+    "fecha": "2020",
+    "resumen": "(Acción, Aventura) - La Revolución, es una serie thriller ambientada en La Revolución francesa, pero dándole otro giro. Durante el siglo XVIII, una nueva enfermedad hace que la sangre se vuelva azul. En Francia de 1787, el futuro inventor de la guillotina, Joseph Guillotin, descubre la existencia de un nuevo virus mientras investiga una serie de misteriosos asesinatos: la sangre azul. La enfermedad se ha propagado dentro de la aristocracia provocando ataques hacia la nobleza dando comienzo a una revuelta.",
+    "urlImg": "https://blogger.googleusercontent.com/img/a/AVvXsEhtE3eKHp_4SFt7jN5dB9Df0BJWTujWcZ5QcDVJxdng_e6h64IrbEuJuVzZ4MqOXYm1QDqIY-BBpZHz0mQkX_uFfCvo6KpO4W4OZavvhBJozf_eSp6UmjWMhqG-JexTo3_ixYkldzgtlXYiy6JvQx3-J4BsQZmLNpB1Vi_D75Gt9I4atSc7Nu1LYUpL=s439",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheG7Jn-wevEIum1Q7a_wfM0Nek4pZWpPHdqfJBmiIRNg4_ll6I8Aeg_RSqMVB3U8MHr5Yoh01dL6x8KmMIy10jlezjtTBgqb0OdU-00icDj6RXcoMxhIwqZCx-Wm843j7sGxFG1lKK3ZHczHDLX8rt_Qxnt787DN11PfJ_AkFpizFw8AcNEc9b-nzB/s320/personajes-la-revolucio%CC%81n-serie-1024x576.jpg",
+    "linkVideo": "https://secoa20201.github.io/movies.com/series/La Revolución.html"
+  },
+  {  
     "id": "A201",
     "all": "all",
     "title": "SEE",
