@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plantilla series</title>
+    <link rel="stylesheet" href="https://secoa20201.github.io/movies.com/css/index.css">
+    <link rel="stylesheet" href="https://secoa20201.github.io/movies.com/icons/bootstrap-icons.css">
+</head>
+<body>
+
+<div class="contedor--principal">
+    <div class="contenedor--flecha" id="include-co"></div>
+    <div class="contenedor--portada"
+    style="background: linear-gradient(rgba(0,0,0,0.0) 0%, rgba(0,0,0) 100%), url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBn97kY5iMqEOuC44jpKcBqqZPKL5wrnszPx3aHax_K9bX6IcyNpMMpTLhOuUJxUsQnZpCGNQe5ooF582QxTCiGSjvIDe5s5zTgQI4zjrl8pQD7nNtZnNw-URPMeDAB42PDGNEdMVABZKG7WADqax0yuIBjIJW3DtOet100HK_T_odV-XOI9gJBv0N/s320/sddefault.jpg);
+                min-height: 15.60em;
+                background-repeat: no-repeat;
+                background-position:  center;
+	            background-size: 100%;
+	            margin-bottom: 1.12em;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: end; 
+        ">
+        <div class="title-portada"><p>Monstruos de Cracovia</p></div>
+    </div><!--contenedor--portada-->
+    
+    <div class="contenedor.link" >
+    <nav>
+        <ul class="menu">
+            <li class="list">
+                <a href="#" class="submenu-btn menu__link">
+                    <i class="bi-folder"></i><!--folder-->
+                    <i class="bi-circle-fill"></i>Temporadas 1
+                    <i class="bi-circle-fill"></i>Capitulos 8
+                    <i class="bi-arrow-right-short"></i>
+                </a>
+                <ul class="cont-link" id="menu">
+                    <h1><i>Temporada 1</i></h1>
+                    <li class="link--"><a href="https://infobiloa.github.io/BD.BILOA.COM/series/Monstruos de Cracovia/Monstruos de Cracovia-cap-1.html" class="menu__link empujar"><i class="bi-play-fill"></i>Monstruos de Cracovia TEM1-EPS1</a></li>
+                    <li class="link--"><a href="https://infobiloa.github.io/BD.BILOA.COM/series/Monstruos de Cracovia/Monstruos de Cracovia-cap-2.html" class="menu__link empujar"><i class="bi-play-fill"></i>Monstruos de Cracovia TEM1-EPS2</a></li>
+                    <li class="link--"><a href="https://infobiloa.github.io/BD.BILOA.COM/series/Monstruos de Cracovia/Monstruos de Cracovia-cap-3.html" class="menu__link empujar"><i class="bi-play-fill"></i>Monstruos de Cracovia TEM1-EPS3</a></li>
+                    <li class="link--"><a href="https://infobiloa.github.io/BD.BILOA.COM/series/Monstruos de Cracovia/Monstruos de Cracovia-cap-4.html" class="menu__link empujar"><i class="bi-play-fill"></i>Monstruos de Cracovia TEM1-EPS4</a></li>
+                    <li class="link--"><a href="https://infobiloa.github.io/BD.BILOA.COM/series/Monstruos de Cracovia/Monstruos de Cracovia-cap-5.html" class="menu__link empujar"><i class="bi-play-fill"></i>Monstruos de Cracovia TEM1-EPS5</a></li>
+                    <li class="link--"><a href="https://infobiloa.github.io/BD.BILOA.COM/series/Monstruos de Cracovia/Monstruos de Cracovia-cap-6.html" class="menu__link empujar"><i class="bi-play-fill"></i>Monstruos de Cracovia TEM1-EPS6</a></li>
+                    <li class="link--"><a href="https://infobiloa.github.io/BD.BILOA.COM/series/Monstruos de Cracovia/Monstruos de Cracovia-cap-7.html" class="menu__link empujar"><i class="bi-play-fill"></i>Monstruos de Cracovia TEM1-EPS7</a></li>
+                    <li class="link--"><a href="https://infobiloa.github.io/BD.BILOA.COM/series/Monstruos de Cracovia/Monstruos de Cracovia-cap-8.html" class="menu__link empujar"><i class="bi-play-fill"></i>Monstruos de Cracovia TEM1-EPS8</a></li>
+                                        
+                </ul>
+            </li>
+        </ul><!--end temporada-->
+        
+       </nav>
+    </div>
+</div>
+
+
+  
+<div class="contenedor-body-iframe" id="include-body"></div>  
+<div class="contenedor-footer-iframe" id="include-footer"></div>
+
+ <script>
+    
+    const menu = document.getElementById("menu")
+    fullscreen = function(e){
+       if (e.webkitRequestFullScreen) {
+         e.webkitRequestFullScreen();
+       } else if(e.mozRequestFullScreen) {
+         e.mozRequestFullScreen();
+       };
+    };
+
+    const flechaFrame = document.getElementById("iframe--");
+    flechaFrame.addEventListener("click", function(){
+        document.getElementById("page-iframe").style.bottom="-100%";
+        document.getElementById("frame").src = ""; 
+    });
+
+    menu.addEventListener("click", function(a){
+        document.getElementById("page-iframe").style.bottom="0";
+        a.target.classList.contains('empujar');
+        a.stopPropagation();
+        fullscreen(document.getElementById('frame'));
+    });
+    
+ </script> <!--end script-->
+ <script src="https://secoa20201.github.io/movies.com/js/extras.js"></script> 
+</body>
+</html>
