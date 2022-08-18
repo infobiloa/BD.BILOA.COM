@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://secoa20201.github.io/movies.com/icons/bootstrap-icons.css">
+    <script src="https://loadigital.github.io/page.biloav1.com/js/jquery.js"></script>
 </head>
 <body>
     <style>
@@ -52,6 +53,14 @@ fullscreen = function(e){
     fullscreen(document.getElementById('if-page'));
     
  })
+ $(document).ready(function () {
+  function reorient(e) {
+    var portrait = (window.orientation % 90 == 0);
+    $("body > div").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
+  }
+  window.onorientationchange = reorient;
+  window.setTimeout(reorient, 0);
+});
     </script>
     
 </body>
