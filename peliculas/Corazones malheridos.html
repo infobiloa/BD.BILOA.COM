@@ -5,56 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://secoa20201.github.io/movies.com/icons/bootstrap-icons.css">
-    
 </head>
 <body>
     <style>
         html, body{height: 100%;margin: 0;display: flex;flex-direction: column;}
         .main{width: 100%;height: 100%;}
         .if-page{width: 100%;height: 100%;}
-
-        .co-img-play{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border: solid 0px #c4fd09;
-        color: #fff;
-        font-size: 150px;
-        position: absolute;
-        background: #000000;
-        }
-        
     </style>
-<div class="co-img-play">
-    <div class="img-play">
-        <a target="_blank" href="#"><i class="bi-play-circle" id="insertPeli"></i></a>
-    </div>
- </div>
+
 <div class="main" id="contenedor_iframe">
-    <iframe class="if-page" id="if-page" src="https://sbspeed.com/e/d5t5kkrd5xlq.html" frameborder=0 marginwidth=0 marginheight=0 allowfullscreen></iframe>
+    <iframe class="if-page" src="https://sbspeed.com/e/d5t5kkrd5xlq.html" frameborder=0 marginwidth=0 marginheight=0 allowfullscreen></iframe>
 </div>
-    <script>
-
-fullscreen = function(e){
-    if (e.webkitRequestFullScreen) {
-      e.webkitRequestFullScreen();
-    } else if(e.mozRequestFullScreen) {
-      e.mozRequestFullScreen();
-    };
- };
-
- const insertPeli = document.getElementById("insertPeli");
- insertPeli.addEventListener("click", function(){
-    document.querySelector(".co-img-play").style.display="none"
-    fullscreen(document.getElementById('if-page'));
-    
- });
- </script>
     
 </body>
 </html>
