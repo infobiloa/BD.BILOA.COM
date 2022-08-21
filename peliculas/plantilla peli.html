@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plantilla series</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../icons/bootstrap-icons.css">
+</head>
+<body style=" background: rgb(145, 3, 3);">
+<div class="co-main" id="co-main"></div>
+<div class="co-video">
+    <div class="co-img-play">
+        <a target="_blank" href="http://lyksoomu.com/6U4Q"><i class="bi-play-circle" id="insertPeli"></i></a>
+     </div>
+    <div class="co-iframe">
+        <iframe class="video" id="video" src="https://sbspeed.com/e/d5t5kkrd5xlq.html"  frameborder=0 marginwidth=0 marginheight=0 allowfullscreen></iframe>
+    </div>
+    
+</div>
+
+<!--javascript-->    
+<script>
+/*const  API_KEY  =  'api_key=d092eba29fbb5fe6130283f8e1934752' ;
+const  BASE_URL  =  'https://api.themoviedb.org/3' ;
+const  API_URL  =  BASE_URL  +  '/discover/movie?sort_by=popularity.desc&language=es&page=82&' + API_KEY;
+const  IMG_URL  =  'https://image.tmdb.org/t/p/w500' ;
+const co_main = document.getElementById("co-main");
+getMovie(API_URL);
+function getMovie(url){
+    fetch(url).then(res => res.json()).then(data =>{
+        console.log(data)
+        showMovie(data.results);
+    })
+}*/
+const insertPeli = document.getElementById("insertPeli");
+ insertPeli.addEventListener("click", function(){
+    document.querySelector(".co-img-play").style.display="none"   
+ });
+const co_main = document.getElementById("co-main");
+document.addEventListener('DOMContentLoaded', () => {
+    fetchData();
+});
+const fetchData = async () => {
+    try{
+        const res = await fetch('../js/api.json');
+        const data = await res.json();
+        dataPeliculas(data);
+    }catch (error) {
+        console.log(error);
+    };
+};
+
+const dataPeliculas =data =>{
+
+    for (let index = 0; index < data.length; index++) {
+        const element = data[index];
+        if(element.id === "A254"){
+    
+    const divCartelera = document.createElement("div");
+    divCartelera.innerHTML = `
+    <div class="contenedor--flecha">
+        <div class="flecha--s"><a href="#"><span class="bi-arrow-left-short" ></span></a></div>
+    </div>
+    <div
+    style="
+    background: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(145, 3, 3) 100%), url(${element.urlImg});
+    min-height: 30.62em;
+    background-repeat: no-repeat;
+    background-position:  center;
+	background-size: 100%;
+	margin-bottom: 1.12em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-end;
+    
+     ">
+    <div class="co-poster">
+    <div class="co-img-poster"><img src="${element.urlImg}" alt=""></div>
+    <div class="co-title-poster">
+        <div class="co-title-poster"><p>${element.title}</p></div>
+        
+    </div>
+   </div>
+    </div>
+
+    <div class="co-poster">
+    <div class="co-sinopsis-poster"><p>${element.resumen}</p></div>
+    
+   </div>
+    `
+       co_main.appendChild(divCartelera);
+        
+        };
+    };
+};
+
+
+
+    </script>
+</body>
+</html>
