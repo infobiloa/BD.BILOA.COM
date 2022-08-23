@@ -12,6 +12,19 @@
     "urlImgDes": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
     "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/Top Gun Maverick.html"
   },
+   {  
+    "id": "A255",
+    "all": "all",
+    "title": "La hija del lobo",
+    "genero": "Accion",
+    "categoria": "Pelicula",
+    "puntuacion": "6.4",
+    "fecha": "2019",
+    "resumen": "(Acción) - La exespecialista militar Clair Hamilton regresa a casa de su gira por el Medio Oriente debido al fallecimiento de su padre y para reclamar su herencia. Luego, su hijo es secuestrado y retenido por un rescate por una pandilla liderada por una figura misteriosa conocida solo como 'Padre'",
+    "urlImg": "https://image.tmdb.org/t/p/w500/ghoNQkJX9Hk1m8GxTsBg4Xez1gn.jpg",
+    "urlImgDes": "",
+    "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/La hija del lobo.html"
+  },
     {  
     "id": "A250",
     "all": "all",
