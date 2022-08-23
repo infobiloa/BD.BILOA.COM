@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer"/>
     <title>B!LOA</title>
-    <link rel="stylesheet" href="https://loadigital.github.io/page.biloav2/css/index.css">
-    <link rel="stylesheet" href="https://loadigital.github.io/page.biloav2/icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://loadigital.github.io/page.biloa.v3/css/index.css">
+    <link rel="stylesheet" href="https://loadigital.github.io/page.biloa.v3/icons/bootstrap-icons.css">
 </head>
 <body style=" background: rgb(78, 3, 3);">
 <div class="co-main" id="co-main"></div>
 <div class="co-idioma">
     <div class="idioma">
-        <img src="https://loadigital.github.io/page.biloav2/img/LATINO.jpg" alt="">
+        <img src="https://loadigital.github.io/page.biloa.v3/img/LATINO.jpg" alt="">
         <p>Español Latino</p>
     </div>
 </div>
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 const fetchData = async () => {
     try{
-        const res = await fetch('https://loadigital.github.io/page.biloav2/js/api.json');
+        const res = await fetch('https://loadigital.github.io/page.biloa.v3/js/api.json');
         const data = await res.json();
         dataPeliculas(data);
     }catch (error) {
@@ -54,12 +54,12 @@ const dataPeliculas =data =>{
 
     for (let index = 0; index < data.length; index++) {
         const element = data[index];
-        if(element.id === "A255"){
+        if(element.id === "A256"){
     
     const divCartelera = document.createElement("div");
     divCartelera.innerHTML = `
     <div class="contenedor--flecha">
-        <div class="flecha--s"><a href="https://loadigital.github.io/page.biloa.v3/peliculas.html"><span class="bi-arrow-left-short" ></span></a></div>
+        <div class="flecha--s"><a href="#"><span class="bi-arrow-left-short" ></span></a></div>
     </div>
     <div
     style="
@@ -87,7 +87,6 @@ const dataPeliculas =data =>{
     </div>
    </div>
     </div>
-
     <div class="co-poster">
     <div class="co-sinopsis-poster"><p>${element.resumen}</p></div>
     
@@ -105,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 const fetchData1 = async () => {
     try{
-        const res = await fetch('https://infobiloa.github.io/BD.BILOA.COM/apis/peliculas.json');
+        const res = await fetch('https://infobiloa.github.io/BD.BILOA.COM/apis/accion.json');
         const data = await res.json();
         dataRecomendadas(data);
     }catch (error) {
