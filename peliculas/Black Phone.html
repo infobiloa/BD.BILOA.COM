@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 const fetchData1 = async () => {
     try{
-        const res = await fetch('https://infobiloa.github.io/BD.BILOA.COM/apis/Terror.json');
+        const res = await fetch('https://infobiloa.github.io/BD.BILOA.COM/apis/terror.json');
         const data = await res.json();
         dataRecomendadas(data);
     }catch (error) {
