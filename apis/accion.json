@@ -1,5 +1,5 @@
 [
-   {  
+  {  
     "id": "A257",
     "all": "all",
     "title": "Top Gun Maverick",
@@ -12,7 +12,7 @@
     "urlImgDes": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
     "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/Top Gun Maverick.html"
   },
-   {  
+  {  
     "id": "A255",
     "all": "all",
     "title": "La hija del lobo",
@@ -25,7 +25,7 @@
     "urlImgDes": "",
     "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/La hija del lobo.html"
   },
-    {  
+  {  
     "id": "A250",
     "all": "all",
     "title": "Turno del día",
@@ -37,5 +37,44 @@
     "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB6uvSwoDA22B2FvAwfZbrHDuiddLtqKVS05XWayKtVdUq8JNRnEU8NMAgldRWD6FDfhai7iRZEDQpuvNaUWSpI-0kjkLKwlGYGTxDUNFkAYlfvWWVxweDTgm1vauG3yA0MAk5DUqKQYl8j1AaRF8oYmbb5iL0rjBJVY0ruKeugL9iRIb_IxZ53EOd/s320/Captura.PNG",
     "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHSc4eeRDVpfNk36hSmjHuLwSaDepIYLFb02tuFREFlRYBJZVL7VgS6JzJkhzMxVP7N3VvU6m27104M3hkB4jN6BVMQQSyoNOoNqMsZRZaHhYLR6eS_pgFHfxHxRTAwjfN7Veu3vy0LwKUfowcn6bpKGw_lBO-x2NfUU2M3msbLhayw2R8tLi3d680/s320/840_560.jpg",
     "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/Turno del día.html"
+  },
+  {  
+    "id": "A169",
+    "all": "all",
+    "title": "Guerra mundial Z",
+    "genero": "Accion",
+    "categoria": "Pelicula",
+    "puntuacion": "6.9",
+    "fecha": "2013",
+    "resumen": "(Acción, Ciencia Ficcion, Suspenso) - Adaptación del libro de Max Brooks que cuenta la historia de Gerry Lane un reputado investigador de las Naciones Unidas que se ve envuelto de repente en un apocalipsis zombi. Después de ser llevado a un portaaviones del ejército, Gerry recibirá la misión de averiguar el origen del virus que está destruyendo la humanidad a pasos agigantados. Deberá viajar a Jerusalén, último lugar del que se tienen registros del virus que dio origen a la pandemia. Aquí comenzará una carrera contrarreloj que Gerry tendrá que ganar si quiere salvaguardar el futuro de una humanidad que está siendo devastada por unos seres rabiosos que parecen tener su origen en un virus diseñado y propagado por los seres humanos.",
+    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPcUxGLJKKxh0xrYnD_UwdF4QUj9xRtOJzsCruXMnalN2Dojt7j5ARE_OBIxs_sv3qA0FDZ2qZBheZVpM_ZievoIy2xh0PsfHPXtO-NWhx3jvRl8eYB7TYE7tF2xsEyuvUs5O11MVPsJO5AKnRT3_dcxDXsLd78nCkcQewnJjnBmrMLEciRo02ZyJe/s439/Guerra_Mundial_Z-150505659-large.jpg",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirNcCnBvZjW9c0rDqoXd0MEPkmvWk5KUYwCXgWJeWE98xQP-5fV6X5rS1oDUkMmnn-F6uzKbY_k4jjJZiuTt59-EkS3zqiH-HYfdbQ6iTZtSKwdgbYmykLMN-WRKNRxlKB0G_KOpTdIHw5FOhtVe3NPhZJrsuozy2Vgm78fj58EUADmj3P7VIB6LQs/s320/guerra-mundial-z-2-1539251461.jpg",
+    "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/Guerra mundial Z.html"
+  },
+  {  
+    "id": "A165",
+    "all": "all",
+    "title": "Batman: El Caballero de la Noche",
+    "genero": "Accion",
+    "categoria": "Marvel",
+    "puntuacion": "5.8",
+    "fecha": "18 de julio de 2008",
+    "resumen": "( Acción, Aventura) - Batman, Bruce Wayne regresa para continuar su guerra contra el crimen. Con la ayuda del teniente Jim Gordon y del Fiscal del Distrito Harvey Dent, Batman se propone destruir el crimen organizado en la ciudad de Gotham. El triunvirato demuestra su eficacia, pero, de repente, aparece Joker, un nuevo criminal que desencadena el caos y tiene aterrados a los ciudadanos.",
+    "urlImg": "https://blogger.googleusercontent.com/img/a/AVvXsEjbGtoQtIIoaXHUA5PfVq2yuacdgMg1DsnhdqvAAjKmhgmldeqm8kPrmSZHZOcaHksVp1MTgq1w4dRkcUZ5f98pCZHmI-_U0L3BMFm_vsMtIj5DDQd-PKNAAm_QLg_gLR1IgZPxG6Mmx2M6PWc1L7tvsl7QGQyZ7jdRQ7eDeTFhHWZHlXdDHRoPHeGT=s439",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRO_SmiiTjO0ziQGWmD2gHcXMayY_8KbQykuRDM2UyLOWVHbA7M0a7nuuSN6ICsbTW2N3kbaWLVbv3j5eZ_huKGF9OcT8SyVH__DvPI-X1v6jpmBx85x9jTEdnhmBX_ckyCVYA_tJUYKA_z3iUiZUERDer5M-vIY5DifGjVKm52CsbNITN5izGvTGg/s320/batman-the-dark-knight-movie-hd-wallpaper-2560x1600-3857.jpg",
+    "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/Batman El Caballero de la Noche.html"
+  },
+  {  
+    "id": "A121",
+    "all": "all",
+    "title": "El Especialista",
+    "genero": "Accion",
+    "categoria": "Pelicula",
+    "puntuacion": "9.7",
+    "fecha": "2011",
+    "resumen": "(Misterio, Suspenso, Acción) - Arthur Bishop (Jason Statham) es un asesino profesional de élite, con un estricto código y un talento único para eliminar limpiamente a sus víctimas. La muerte de su amigo y mentor Harry (Donald Sutherland) le obligará a replantearse sus métodos, sobre todo cuando Steve (Ben Foster), el hijo de Harry, le pida ayuda para saciar su sed de venganza. Bishop empieza a entrenar a Steve y a enseñarle sus letales técnicas, pero las mentiras y los engaños amenazan con convertir esta alianza en el mayor de sus errores.",
+    "urlImg": "https://blogger.googleusercontent.com/img/a/AVvXsEhSUnDbupca9spXN4ILj4rOO8zMFW8Zq2wO5jrqX7jaj8OwZUjS69YkyVShdXDbver87LGBrcZOQww9t34V2CuDvtRvK5Q0Uz3tFyGsdfktSMgGAa-jesxdftkVTmGepAPLsT2Ew4G3N77GD4JZAkNniAZnPtRPBk0Oe737t5Ky-SDrIfAxXmsw0Z-P=s439",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-SFcDTTdzJ4zSVrXe7Qx_xfIzpyc1qfDlmprDWglkFihQbrwT4nsUz7NUvjFYK7xjoL2ASxVGyhxvieHpujePq8I1F9TtHn__Qtb2Hf7eUpfT5-3qJxqNrV7Iqp32rIhaHLZ1OmLjb25tFhL-n9m2PTKUpvI3A3bKqcu_zNuZHfA0bAzKy_3Xl3dJ/s320/840_560.jpg",
+    "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/El Especialista.html"
   }
 ]
