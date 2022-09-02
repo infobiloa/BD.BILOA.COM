@@ -1,16 +1,55 @@
 [
  {  
-    "id": "A258",
+    "id": "A221",
     "all": "all",
-    "title": "La casa del dragón",
+    "title": "Bienvenidos a Edén",
+    "genero": "Suspenso",
+    "categoria": "Serie",
+    "puntuacion": "5.9",
+    "fecha": "2022",
+    "resumen": "(Suspenso) - Un grupo de jóvenes van a una fiesta en una isla paradisíaca, pero terminan viviendo un infierno lleno de secretos, peligros y trampas.",
+    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJZmgeDDESZ4V8g1IWixuUriDOUAba4eQHkkgS6fmrnQYh2WrvvZRkSyEgQCS5deJUAcPNpFdIMU14BjNcxPzFQirTpoOb16Lmui8GUeioVbAv98ziu9RWMlBpinjdLQu_VPhXxm2fEoGqmsBl_TVtzyKr6xW6vuOwjMRwS_YEY0Q104kc5t6KZStj/s320/3734814.jpg",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbwRmPR-IRNW0pA5gBxQg7R2I0Vw8qKI61UzLtUPfGehfw7nhl7yEZm1oFv7TykpUCx9g3GeNgp93xCAIeoncNUmffF_tGUEWiQZcYq5gNS7WmHylISXoEuqZTHLLmn3MJJf4D5cY3tR8YvOPC-VlXh9LYZddrRPLZTbEI1HCj6xJo0DbfEjtIebuH/s320/5597849.jpg",
+    "linkVideo": "go:A221"
+  },
+ {  
+    "id": "A234",
+    "all": "all",
+    "title": "Halo",
+    "genero": "Accion",
+    "categoria": "Serie",
+    "puntuacion": "6.6",
+    "fecha": "2022",
+    "resumen": "(Ciencia ficción, Acción, Aventuras) - Serie de TV basada en la saga de videjuegos. En el siglo 26, la humanidad tiene que lidiar con una amenaza alienígena conocida como the Covenant (El Pacto). Halo tejerá historias personales repletas de acción, aventura y una enriquecedora visión del futuro. La serie es una historia independiente inspirada en la franquicia del videojuego, en lugar de una continuación, adaptación o precuela.",
+    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit2ZdIw0WPwxfrRebgtwvir2g3fBsIug9rulEbqRkJDWS-lnobvuWHGX1gXhaMN5wmVYMjP8wx6OItTdR8LjaUXCc4k_SI9FH2Cg3YpFVs0FhMNwEBBMYxNCnypITne7DFSF5oj8fMAHWVqeF9nXCbVolwTWo63UEpQ9mhx2kJKadVd0XsqaxdqKzg/s320/2589351.jpg",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKFTtOvHueWdBjl3keIi9McsE80yUqHrT-oawak4LyhhuKF-N7LLpnjt0lbZtUf0avAKoqPLhdkUTK7HNKGb1zATGihRuTTlPp0mX_SfjXw62dUfsDCHC4AN8AmeMVPxVYgBxWKpl2zNq3ag6zqShzq3VSnVeoahtJ2R-b-5-ILRkfdPeUpLyYopmg/s320/halo.jpg",
+    "linkVideo": "go:A234"
+  },
+ {  
+    "id": "A241",
+    "all": "all",
+    "title": "Black Bird confesiones de un asesino",
     "genero": "Drama",
     "categoria": "Serie",
-    "puntuacion": "9.0",
+    "puntuacion": "4.8",
     "fecha": "2022",
-    "resumen": "(Drama, Acción) - Basada en el libro 'Fuego y Sangre' de George RR Martin. La serie se centra en la casa Targaryen, trescientos años antes de los eventos vistos en 'Juego de Tronos'.",
-    "urlImg": "https://image.tmdb.org/t/p/w500/xiB0hsxMpgxpJehYxUDhiUkg2w.jpg",
-    "urlImgDes": "https://image.tmdb.org/t/p/w500/xiB0hsxMpgxpJehYxUDhiUkg2w.jpg",
-    "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/series/La casa del dragón.html"
+    "resumen": "(Drama, Crimen) - La verdadera historia del narcotraficante convicto Jimmy Keene, a quien se le ofrece su libertad a cambio de obtener una confesión del presunto asesino en serie Larry Hall y averiguar dónde están enterradas sus víctimas.",
+    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI0w6L0FD1zjSPr78MBHbZfwJwIfVAq4OWg5lJZ-aasSuG5TWCDNmtabtOBJDFYoXOoueKpxLbLgSZG5hRkjQeATPelOvYE_ItOwoCfU3bPkw0Y9k1ou43GyqlqEiyvGzZSJfZOoMiqQXy30vlWyC9mGPEOWsXhqghVX3S9zwN_uyUPFSu7hz4RyoS/s320/79M2yNSmkh4CCMrWNV6b2xvIeNn.jpg",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjE65MXfEiUO8Pni9Nuiv8PL0OXM00a9GordlP5DiKJjxUjJfEL3nuQMSQsUXE01W9l80yZfGGsYkWssGMecSSoZjW5ZKoCKj5dacJlYQYE2o-DykUSOYBCuehSMz5qSSxbbTRh8ixC7Jj_GA-Ck5ZMIiggat1lrkG1vvrcS2hKK5AffFjdRkPMdfad/s320/in-with-the-devil.jpg",
+    "linkVideo": "go:A241"
+  },
+ {  
+    "id": "A246",
+    "all": "all",
+    "title": "Monstruos de Cracovia",
+    "genero": "Drama",
+    "categoria": "Serie",
+    "puntuacion": "4.3",
+    "fecha": "2022",
+    "resumen": "(Drama) - Una joven con un triste pasado, un grupo de estudiantes y su misterioso profesor investigan actividades paranormales y se enfrentan a demonios.",
+    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGGZByGTtS_WlmWvjJVBhNIg4Z9gAQkn4Ujr7taOgQFKMpR7St_GTXysiSsbJvfNr6LlwYywzCLCPhGKwvmCntua_ZLvBTBi_MGTn4c_Kzc38Cy7MXEsB4ruEbQYTEcNBw6u_vV0NcTP2t0qOBZ0O4gnichEQQrA9jMXE9LTsT8YBl447FCKphht1b/s320/gmiTxIQhVNawPbUSrH1oCxUwOdq.jpg",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBn97kY5iMqEOuC44jpKcBqqZPKL5wrnszPx3aHax_K9bX6IcyNpMMpTLhOuUJxUsQnZpCGNQe5ooF582QxTCiGSjvIDe5s5zTgQI4zjrl8pQD7nNtZnNw-URPMeDAB42PDGNEdMVABZKG7WADqax0yuIBjIJW3DtOet100HK_T_odV-XOI9gJBv0N/s320/sddefault.jpg",
+    "linkVideo": "go:A246"
   },
  {  
     "id": "A258",
