@@ -1,28 +1,3 @@
 [
-  {  
-    "id": "A230",
-    "all": "all",
-    "title": "Lightyear",
-    "genero": "Animacion",
-    "categoria": "Pelicula",
-    "puntuacion": "5.9",
-    "fecha": "2022",
-    "resumen": "(Animación, Aventuras, Ciencia ficción, Comedia) - Sam Greenfield, que ha crecido en un centro de acogida, es la persona más desafortunada del mundo. Cuando descubre la ignota Tierra de la Suerte, Sam debe hermanarse con las criaturas mágicas que viven allí para cambiar su fortuna.",
-    "urlImg": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhV_X0M-i0RVyEBqvZoNQhs2z2l100asJ1tF-BRCUYTzivlFJRoRrkkbeVt_DZJ4s0dWf3HIzB3KVtPaFdWHrw5KfALQEsU2vk8B7YjYcuB9Y0GbtdNa5eQAcLic4bGoEh4FH3fyepR8OJTPlt-Gtaz4Qx40Q_jCHOFsq1mh3t4pszak7ILRM_yCvxO/s320/Lightyear-529062623-mmed.jpg",
-    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbzjUQh4S7Q-DXfDJ1ftM6PWJWP7NRvOSCX0khvcrCIGapekBkE__02iwyAW08kpc-hwkKPQASMwxNc9ChsSQ1RnaG6yUcUhgCSbDjc7GvUnM9f2XP_nA0rALEbKhQJiZmR4iOVkV_vX5JNcDGZCf2h_Vjul0WWRLtM4wmYdXwMWI9xLOY0W07W9V_/s320/Lightyear.jpg",
-    "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/Lightyear.html"
-  },
-  {  
-    "id": "A065",
-    "all": "all",
-    "title": "Equipo Foca",
-    "genero": "Animacion",
-    "categoria": "Pelicula",
-    "puntuacion": "4.7",
-    "fecha": "2021",
-    "resumen": "( Animación, Aventura)-Después de que su mejor amigo muere en un ataque de tiburón, Quinn, una adorable pero tenaz foca, reúne un EQUIPO SEAL para luchar contra una banda de tiburones que se apodera del vecindario. Pero esta alegre banda de focas internacionales no está en absoluto entrenada para tal misión.",
-    "urlImg": "https://blogger.googleusercontent.com/img/a/AVvXsEh5mCvIwGK0b9vNLMIYNSZHZkXjGAzvZcLfYtSco49PkthNXz8RBsREHoTvPWoxv_k8_Q8RMPexM2SpGTjoOcmD42oxCG6986YLRkyZNaT5T9Ho87uHVd-QfN1BhKm5d6XXL7k2Nv588CJ4P4GeV3ILTmzm13NUGtpAAgtOwaDjTNX7WMjEZTCSUDnb=s439",
-    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEPip3AKJTB-TLvkt1A5FwqSE9etCwpAtZAplZ09qsqfYdEwsllkEsa7scGWTFqjKdypIVNHaF4aN2ms42_HEFIDtsceHiIZ3JtkQIiUtLQ3cvMTioA7omhyl9l6Q9i1INKbj5SMiIhdLT4-7oWFlIndHapKsZ20c082k-UsuMdvTMmpCkAjXLAJQz/s320/5907546.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg",
-    "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/Equipo Foca.html"
-  }
+  
 ]
