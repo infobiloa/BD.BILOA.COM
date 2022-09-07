@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poster</title>
-    <link rel="stylesheet" href="https://loadigital.github.io/movies-biloa.comv2/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://loadigital.github.io/movies-biloa.comv2/icons/bootstrap-icons.css">
     <script src="https://loadigital.github.io/movies-biloa.comv2/js/jquery.js"></script>
 </head>
@@ -55,14 +55,10 @@
         <div class="recientes--"><p>Recomendados</p></div>
         <div class="movies-recomendadas" id="movies-recomendadas"></div>
     </div>
-       <div class="co-comentarios">
-        <div class="recientes--"><p>Comentarios</p></div>
-        <div class="comentarios">
-            <div class="fb-comments" data-mobile="true" data-href="https://infobiloa.github.io/BD.BILOA.COM/peliculas/Black%20Phone.html" data-width="100%" data-numposts="10"></div>
-        </div>
+    <div class="co-comentarios">
+        <div class="coments--"><button onclick="coments()">Comentarios <i class="bi-chevron-double-right"></i></button></div>
     </div>
-	
-    
+       
         <div class="contenedor-inp" id="contenedor-inp">
             <div class="cont-inp">
                 <i class="bi-arrow-left-short" id="atras-inp"></i>
@@ -86,12 +82,42 @@
         <div class="co-buton-x">
             <i class="bi-x-circle-fill" onclick="cerrarX()"></i>
         </div>
+        <div class="co-img-play-1">
+            <p>Este video contiene ventanas emergentes y la carga es optima, puedes mirar sin cortes.</p>
+            <a target="_blank" href="http://lyksoomu.com/6U4Q"><i class="bi-play-circle" id="insertPeli"></i></a>
+         </div>
         <div class="video">
             <iframe sandbox="allow-scripts allow-same-origin"  src="https://v2.zplayer.live/embed/0bic9jqzp7bj"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=yes width=640 height=360 allowfullscreen ></iframe> 
         </div>
     </div>
+    <div class="modal-coments" id="modal-coments">
+       
+        <div class="_coments">
+            <div class="btn-atras"><p onclick="btnAtras()"><i class="bi-chevron-double-left"></i> Atras</p></div>
+            <div class="fb-comments" data-lazy="true" data-mobile="true" data-href="https://infobiloa.github.io/BD.BILOA.COM/peliculas/Black%20Phone.html" data-width="100%" data-numposts="3"></div>
+        </div>
+    </div>
 
 <script>//javascript
+fullscreen = function(e){
+    if (e.webkitRequestFullScreen) {
+      e.webkitRequestFullScreen();
+    } else if(e.mozRequestFullScreen) {
+      e.mozRequestFullScreen();
+    };
+ };
+function btnAtras(){
+    document.getElementById("modal-coments").style.left="-100%"
+}
+function coments(){
+    document.getElementById("modal-coments").style.left="0"
+}
+const insertPeli = document.getElementById("insertPeli");
+ insertPeli.addEventListener("click", function(){
+    document.querySelector(".co-img-play-1").style.display="none" 
+    fullscreen(document.getElementById('frame'));  
+ });
+
 const poster = document.getElementById("poster");
 document.addEventListener('DOMContentLoaded', () => {
     fetchData();
@@ -143,6 +169,7 @@ const dataPeliculas =data =>{
     </div>
    </div>
     </div>
+
     <div class="co-sinopsis">
     <div class="co-sinopsis-poster"><p>${element.resumen}</p></div>
     
@@ -156,9 +183,11 @@ const dataPeliculas =data =>{
 
 function play(){
     document.querySelector(".co-video").style.left="0";
+    document.querySelector(".co-img-play-1").style.display="flex"
 }
 function cerrarX(){
-    document.querySelector(".co-video").style.left="-100%";  
+    document.querySelector(".co-video").style.left="-100%"; 
+    //document.getElementById("frame").src = "";   
 }
 const moviesRecomendadas = document.getElementById("movies-recomendadas");
 
@@ -196,8 +225,9 @@ const dataRecomendadas = data =>{
       });  
 };
 </script>
-<script src="https://loadigital.github.io/movies-biloa.comv2/js/index.js"></script>
-<div id="fb-root"></div>	
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v14.0&appId=770985120895727&autoLogAppEvents=1" nonce="U3lnSCua"></script>	
+<script src="https://loadigital.github.io/movies-biloa.comv2/js/index.js"></script> 
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v14.0&appId=770985120895727&autoLogAppEvents=1" nonce="U3lnSCua"></script>
 </body>
 </html>
