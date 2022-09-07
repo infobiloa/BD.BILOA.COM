@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>series</title>
+    <title>Poster-series</title>
     <link rel="stylesheet" href="https://loadigital.github.io/movies-biloa.comv2/css/style.css">
     <link rel="stylesheet" href="https://loadigital.github.io/movies-biloa.comv2/icons/bootstrap-icons.css">
     <script src="https://loadigital.github.io/movies-biloa.comv2/js/jquery.js"></script>
@@ -66,8 +66,7 @@
                         <li class="link--"><a target="insertPage" href="https://www.fembed.com/v/rq7z1hern71jxm7" class="menu__link empujar"><i class="bi-play-fill"></i>Capitulo 7</a><a class="download" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>
                         <li class="link--"><a target="insertPage" href="https://www.fembed.com/v/jnj6qtdzy7wyq37" class="menu__link empujar"><i class="bi-play-fill"></i>Capitulo 8</a><a class="download" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>
                         <li class="link--"><a target="insertPage" href="https://www.fembed.com/v/qz6kwte57zmkprw" class="menu__link empujar"><i class="bi-play-fill"></i>Capitulo 9</a><a class="download" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>
-                        <li class="link--"><a target="insertPage" href="https://www.fembed.com/v/ww1e4fn3y51x-g4" class="menu__link empujar"><i class="bi-play-fill"></i>Capitulo 10</a><a class="download" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>   
-                        
+                        <li class="link--"><a target="insertPage" href="https://www.fembed.com/v/ww1e4fn3y51x-g4" class="menu__link empujar"><i class="bi-play-fill"></i>Capitulo 10</a><a class="download" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>            
                     </ul>
                 </li>
             </ul><!--end temporada-->
@@ -95,16 +94,25 @@
         </div><!--buscador-->
     
         <!--video-->
-    <div class="co-video">
+    <div class="co-video" id="co-video">
         <div class="co-buton-x">
             <i class="bi-x-circle-fill" onclick="cerrarX()"></i>
         </div>
+        <div class="co-img-play-1">
+            <p>Este video contiene ventanas emergentes y la carga es optima, puedes mirar sin cortes.</p>
+            <a target="_blank" href="http://lyksoomu.com/6U4Q"><i class="bi-play-circle" id="insertPeli"></i></a>
+         </div>
         <div class="video">
-            <iframe src="loadPage.htm" name="insertPage"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=yes width=640 height=360 allowfullscreen ></iframe> 
+            <iframe  src="loadPage.htm" name="insertPage"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=yes width=640 height=360 allowfullscreen ></iframe> 
         </div>
     </div>
 
 <script>//javascript
+const insertPeli = document.getElementById("insertPeli");
+ insertPeli.addEventListener("click", function(){
+    document.querySelector(".co-img-play-1").style.display="none" 
+    fullscreen(document.getElementById('frame'));  
+ });
 const poster = document.getElementById("poster");
 document.addEventListener('DOMContentLoaded', () => {
     fetchData();
@@ -168,7 +176,8 @@ const dataPeliculas =data =>{
 
 
 function cerrarX(){
-    document.querySelector(".co-video").style.left="-100%";  
+    document.querySelector(".co-video").style.left="-100%";
+    document.getElementById("frame").src = "";  
 }
 const subMenuBtn = document.querySelectorAll(".submenu-btn");
     for(let i=0; i < subMenuBtn.length; i++){
@@ -187,12 +196,19 @@ const subMenuBtn = document.querySelectorAll(".submenu-btn");
     
         });
     }
-
+    fullscreen = function(e){
+    if (e.webkitRequestFullScreen) {
+      e.webkitRequestFullScreen();
+    } else if(e.mozRequestFullScreen) {
+      e.mozRequestFullScreen();
+    };
+ };
     const link = document.querySelectorAll('.link-- a[target^="i"')
     link.forEach(link =>{
         link.addEventListener("click", function(){
             document.querySelector(".co-video").style.left="0"; 
-            
+            document.querySelector(".co-img-play-1").style.display="flex"
+            fullscreen(document.getElementById('co-video'));
         })
     })
 
