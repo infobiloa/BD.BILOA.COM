@@ -82,14 +82,18 @@
         <div class="co-buton-x">
             <i class="bi-x-circle-fill" onclick="cerrarX()"></i>
         </div>
-       <!--<div class="co-img-play-1">
+       <div class="co-img-play-1">
             <p>Este video contiene ventanas emergentes y la carga es optima, puedes mirar sin cortes.</p>
             <a target="_blank" href="http://lyksoomu.com/6U4Q"><i class="bi-play-circle" id="insertPeli"></i></a>
-         </div>--> 
+         </div>
         <div class="video" >
-            <video controls autoplay  class="play-iframe" id='frame'>
+            <!--
+            <video controls  class="play-iframe" id='frame'>
                 <source  src="https://www.googleapis.com/drive/v3/files/1olV_pox7nkPMowB0EoABTseIvr1Jmtgl?alt=media&key=AIzaSyBpiPn10pQmzN4Dwf7-cTCi-c7fsx2NOrE" type="video/mp4">
                </video>
+            </div>-->
+            <div class="video">
+                <iframe  src="https://drive.google.com/file/d/1olV_pox7nkPMowB0EoABTseIvr1Jmtgl/preview"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=yes width=640 height=360 allowfullscreen ></iframe> 
             </div>
     </div>
     <div class="modal-coments" id="modal-coments">
@@ -114,11 +118,11 @@ function btnAtras(){
 function coments(){
     document.getElementById("modal-coments").style.left="0"
 }
-//const insertPeli = document.getElementById("insertPeli");
- //insertPeli.addEventListener("click", function(){
-    //document.querySelector(".co-img-play-1").style.display="none" 
+const insertPeli = document.getElementById("insertPeli");
+ insertPeli.addEventListener("click", function(){
+    document.querySelector(".co-img-play-1").style.display="none" 
     //fullscreen(document.getElementById('frame'));  
- //});
+ });
 
 const poster = document.getElementById("poster");
 document.addEventListener('DOMContentLoaded', () => {
@@ -187,8 +191,8 @@ const dataPeliculas =data =>{
 
 function play(){
     document.querySelector(".co-video").style.left="0";
-    //document.querySelector(".co-img-play-1").style.display="flex"
-    fullscreen(document.getElementById('frame'));
+    document.querySelector(".co-img-play-1").style.display="flex"
+    //fullscreen(document.getElementById('frame'));
 }
 function cerrarX(){
     document.querySelector(".co-video").style.left="-100%"; 
