@@ -82,19 +82,21 @@
         <div class="co-buton-x">
             <i class="bi-x-circle-fill" onclick="cerrarX()"></i>
         </div>
-       <div class="co-img-play-1">
+       <!--<div class="co-img-play-1">
             <p>Este video contiene ventanas emergentes y la carga es optima, puedes mirar sin cortes.</p>
             <a target="_blank" href="http://lyksoomu.com/6U4Q"><i class="bi-play-circle" id="insertPeli"></i></a>
-         </div>
+         </div>-->
         <div class="video" >
             <!--
             <video controls  class="play-iframe" id='frame'>
-                <source  src="https://www.googleapis.com/drive/v3/files/1olV_pox7nkPMowB0EoABTseIvr1Jmtgl?alt=media&key=AIzaSyBpiPn10pQmzN4Dwf7-cTCi-c7fsx2NOrE" type="video/mp4">
-               </video>
-            </div>-->
-            <div class="video">
-                <iframe  src="https://drive.google.com/file/d/1olV_pox7nkPMowB0EoABTseIvr1Jmtgl/preview"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=yes width=640 height=360 allowfullscreen ></iframe> 
+                <source src="https://drive.google.com/uc?export=download&id=1olV_pox7nkPMowB0EoABTseIvr1Jmtgl" type='video/mp4'>   
+            </video>
+            -->
+            <video class="play-iframe" id='frame' controls="" autoplay="" name="media"><source src="https://rr4---sn-cvb7lnl7.c.drive.google.com/videoplayback?expire=1662860850&amp;ei=8gUdY6zQDeTFu7APjJ2t-Ac&amp;ip=2800:484:2473:f9bb:1d2d:1766:b889:d151&amp;cp=QVRLVElfT1hTQVhPOmJsYWhZTTM1d3poc1c3MmI3STdCVjlURHRJd1dtZl8xcmVfTHh5cUg2OUc&amp;id=9cd7d878bd9d49c2&amp;itag=22&amp;source=webdrive&amp;requiressl=yes&amp;mh=ok&amp;mm=32&amp;mn=sn-cvb7lnl7&amp;ms=su&amp;mv=m&amp;mvi=4&amp;pl=40&amp;sc=yes&amp;ttl=transient&amp;susc=dr&amp;driveid=1olV_pox7nkPMowB0EoABTseIvr1Jmtgl&amp;app=explorer&amp;mime=video/mp4&amp;vprv=1&amp;prv=1&amp;dur=5751.652&amp;lmt=1661053969837299&amp;mt=1662845562&amp;subapp=DRIVE_WEB_FILE_VIEWER&amp;txp=0011224&amp;sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&amp;sig=AOq0QJ8wRQIgEOdvPipkSt25uCJ7TycnZE_4i13PEqQVU9TZTb7L0lkCIQDaF6HX-bEVB4c7CqIvMCe0pB4P2aPKUq4AQ60WKWWGbQ==&amp;lsparams=mh,mm,mn,ms,mv,mvi,pl,sc&amp;lsig=AG3C_xAwRQIhAMvgjgdU5oZ6iNC9WrOCyBaAbVrEgoEbOkvNVw7YmpLhAiAwJ3aaSwICOb4SrRQ8MD0HjqY97qkyOY6nt4VhVpYBZA==&amp;cpn=TReOEpvMvbvqEYjF&amp;c=WEB_EMBEDDED_PLAYER&amp;cver=1.20220907.01.00" type="video/mp4"></video>
             </div>
+            <!--
+                <iframe  src="https://drive.google.com/file/d/1olV_pox7nkPMowB0EoABTseIvr1Jmtgl/preview"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=yes width=640 height=360 allowfullscreen ></iframe> 
+             -->
     </div>
     <div class="modal-coments" id="modal-coments">
        
@@ -118,11 +120,11 @@ function btnAtras(){
 function coments(){
     document.getElementById("modal-coments").style.left="0"
 }
-const insertPeli = document.getElementById("insertPeli");
+/*const insertPeli = document.getElementById("insertPeli");
  insertPeli.addEventListener("click", function(){
     document.querySelector(".co-img-play-1").style.display="none" 
     //fullscreen(document.getElementById('frame'));  
- });
+ });*/
 
 const poster = document.getElementById("poster");
 document.addEventListener('DOMContentLoaded', () => {
