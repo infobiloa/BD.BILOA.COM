@@ -1,3 +1,30 @@
 [
-  
+  {  
+    "id": "A263",
+    "all": "all",
+    "title": "Samaritan",
+    "genero": "Accion",
+    "categoria": "Pelicula",
+    "puntuacion": "7.0",
+    "fecha": "2022",
+    "resumen": "(Acción, Drama, Ciencia ficción) - Sam Cleary (Javon 'Wanna' Walton), un joven de 13 años, sospecha que su misterioso y solitario vecino, el Sr. Smith (Sylvester Stallone), es en realidad un personaje legendario que se esconde a plena vista. Hace 20 años, el vigilante superpoderoso de Granite City, Samaritan, fue declarado muerto tras una batalla en un almacén con su rival, Némesis. La gente cree que Samaritan falleció en el incendio, pero algunos ciudadanos como Sam tienen la esperanza de que siga vivo. Con la delincuencia en aumento y la ciudad al borde del caos, Sam se propone sacar a su vecino de su escondite para salvar la ciudad de la ruina.",
+    "urlImg": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/4GVIfQVABjKuAWy3fvidPJZE52t.jpg",
+    "urlImgDes": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/4GVIfQVABjKuAWy3fvidPJZE52t.jpg",
+    "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/Samaritan.html",
+    "download": ""
+  },
+  {  
+    "id": "A262",
+    "all": "all",
+    "title": "Thor Love and Thunder",
+    "genero": "Accion",
+    "categoria": "Pelicula",
+    "puntuacion": "6.8",
+    "fecha": "2022",
+    "resumen": "Acción, Aventura, Fantasía) - El Dios del Trueno emprende un viaje que no se parece en nada a lo que se ha enfrentado hasta ahora: una búsqueda de la paz interior. Pero el retiro de Thor se ve interrumpido por un asesino galáctico conocido como Gorr el Carnicero de Dioses. Para hacer frente a la amenaza, Thor solicita la ayuda de Valkiria, de Korg y de su ex novia Jane Foster que, para sorpresa de Thor, empuña su martillo mágico, Mjolnir, como la Poderosa Thor. Juntos, se embarcan en una aventura cósmica en la que tendrán que descubrir el misterio de la venganza del Carnicero de Dioses y detenerlo antes de que sea demasiado tarde.",
+    "urlImg": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/94aSUrOnBBgGa4Z8XnHnIVcXf3Y.jpg",
+    "urlImgDes": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/94aSUrOnBBgGa4Z8XnHnIVcXf3Y.jpg",
+    "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/Thor Love and Thunder.html",
+    "download": ""
+  }
 ]
