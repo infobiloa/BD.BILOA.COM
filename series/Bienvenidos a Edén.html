@@ -57,15 +57,9 @@
                 <li class="list">
                    <p class="submenu-btn">Temporada 1 <i class="bi-chevron-double-right"></i></p>
                     <ul class="cont-link" id="menu">
-                        <li class="link--"><a target="insertPage" href="https://v2.zplayer.live/embed/tm340t9cvx62" class="menu__link empujar"><i class="bi-play-fill"></i>Capitulo 1</a><a class="download" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>
-                        <li class="link--"><a target="insertPage" href="https://v2.zplayer.live/embed/0y113xggq777" class="menu__link empujar"><i class="bi-play-fill"></i>Capitulo 2</a><a class="download" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>
-                        <li class="link--"><a target="insertPage" href="https://v2.zplayer.live/embed/w2oa40rxz0i0" class="menu__link empujar"><i class="bi-play-fill"></i>Capitulo 3</a><a class="download" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>
-                        <li class="link--"><a target="insertPage" href="https://v2.zplayer.live/embed/poz199qivvtd" class="menu__link empujar"><i class="bi-play-fill"></i>Capitulo 4</a><a class="download" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>
-                        <li class="link--"><a target="insertPage" href="https://v2.zplayer.live/embed/md925x0mgano" class="menu__link empujar"><i class="bi-play-fill"></i>Capitulo 5</a><a class="download" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>
-                        <li class="link--"><a target="insertPage" href="https://v2.zplayer.live/embed/2vg6037nr25u" class="menu__link empujar"><i class="bi-play-fill"></i>Capitulo 6</a><a class="download" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>
-                        <li class="link--"><a target="insertPage" href="https://v2.zplayer.live/embed/hdprx98nljyc" class="menu__link empujar"><i class="bi-play-fill"></i>Capitulo 7</a><a class="download" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>
-                        <li class="link--"><a target="insertPage" href="https://v2.zplayer.live/embed/ybrdixsa8ixc" class="menu__link empujar"><i class="bi-play-fill"></i>Capitulo 8</a><a class="download" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>   
+                        <li class="link--"><a target="insertPage" href="https://v2.zplayer.live/embed/tm340t9cvx62" class="menu__link empujar"><i class="bi-play-fill"></i> Capitulo 1</a><a class="download" target="_blank" href="https://loadigital.github.io/ARCHIVO-NO-DISPONIBLE/"><i class="bi-download"></i>Download</a></li>
                         
+                            
                     </ul>
                 </li>
             </ul><!--end temporada-->
@@ -76,7 +70,9 @@
             <div class="recientes--"><p>Recomendados</p></div>
             <div class="movies-recomendadas" id="movies-recomendadas"></div>
         </div>
-        
+        <div class="co-comentarios">
+            <div class="coments--"><button onclick="coments()">Comentarios <i class="bi-chevron-double-right"></i></button></div>
+        </div>
     
         <div class="contenedor-inp" id="contenedor-inp">
             <div class="cont-inp">
@@ -97,12 +93,40 @@
         <div class="co-buton-x">
             <i class="bi-x-circle-fill" onclick="cerrarX()"></i>
         </div>
+        <div class="co-img-play-1">
+            <p>Este video contiene ventanas emergentes y la carga es optima, puedes mirar sin cortes.</p>
+            <a target="_blank" href="http://lyksoomu.com/6U4Q"><i class="bi-play-circle" id="insertPeli"></i></a>
+         </div>
         <div class="video">
-            <iframe sandbox="allow-scripts allow-same-origin" src="loadPage.htm" name="insertPage"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=yes width=640 height=360 allowfullscreen ></iframe> 
+            <iframe sandbox="allow-scripts allow-same-origin"  src="loadPage.htm" name="insertPage"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=yes width=640 height=360 allowfullscreen ></iframe> 
         </div>
     </div>
-
+    <div class="modal-coments" id="modal-coments">
+       
+        <div class="_coments">
+            <div class="btn-atras"><p onclick="btnAtras()"><i class="bi-chevron-double-left"></i> Atras</p></div>
+            <div class="fb-comments" data-href="https://infobiloa.github.io/BD.BILOA.COM/series/Bienvenidos a Ed&#xe9;n.html" data-width="" data-numposts="5"></div>    
+        </div>
+    </div>
 <script>//javascript
+fullscreen = function(e){
+    if (e.webkitRequestFullScreen) {
+      e.webkitRequestFullScreen();
+    } else if(e.mozRequestFullScreen) {
+      e.mozRequestFullScreen();
+    };
+ };
+function btnAtras(){
+    document.getElementById("modal-coments").style.left="-100%"
+}
+function coments(){
+    document.getElementById("modal-coments").style.left="0"
+}
+const insertPeli = document.getElementById("insertPeli");
+ insertPeli.addEventListener("click", function(){
+    document.querySelector(".co-img-play-1").style.display="none" 
+    fullscreen(document.getElementById('frame'));  
+ });
 const poster = document.getElementById("poster");
 document.addEventListener('DOMContentLoaded', () => {
     fetchData();
@@ -190,6 +214,7 @@ const subMenuBtn = document.querySelectorAll(".submenu-btn");
     link.forEach(link =>{
         link.addEventListener("click", function(){
             document.querySelector(".co-video").style.left="0"; 
+            document.querySelector(".co-img-play-1").style.display="flex"
             
         })
     })
@@ -230,6 +255,9 @@ const dataRecomendadas = data =>{
       });  
 };
 </script>
-<script src="https://loadigital.github.io/movies-biloa.comv2/js/index.js"></script> 
+<script src="https://loadigital.github.io/movies-biloa.comv2/js/index.js"></script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v14.0&appId=770985120895727&autoLogAppEvents=1" nonce="3saN1u6s"></script>
+
 </body>
 </html>
