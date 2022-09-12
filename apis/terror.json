@@ -1,5 +1,19 @@
 [
   {  
+    "id": "A266",
+    "all": "all",
+    "title": "Cazando a Ava Bravo",
+    "genero": "Terror",
+    "categoria": "Pelicula",
+    "puntuacion": "6.6",
+    "fecha": "2022",
+    "resumen": "(Terror, Suspense, Acción) - El deportista multimillonario Buddy King se relaja cazando cautivos humanos en su remota propiedad en las montañas. Pero su última víctima, Ava Bravo, no es un blanco fácil.",
+    "urlImg": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/etc6HKBEhNySNnYU2nRgbSeIyoW.jpg",
+    "urlImgDes": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/etc6HKBEhNySNnYU2nRgbSeIyoW.jpg",
+    "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/Cazando a Ava Bravo.html",
+    "download": ""
+  },
+  {  
     "id": "A132",
     "all": "all",
     "title": "La Perfección",
@@ -11,5 +25,5 @@
     "urlImg": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/hkXie4mkqAocng89nrYEcLBkhxw.jpg",
     "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLXXM3sKhhpX0NtOxPVtRzU0jUNSUUvYcvnl580zop4H3f5ZW3SKOzLTqDt-jWQRuAhXXK00TVZ6YxFLl1ELq0N2mRpEgwoEmaRMeetpX0yBl35TW28YC2XZa0tqfCwkyxB8G2HmrcNLLXTCXwx5thSScs-rzld0QsFWkyBA2mlweiSQou8lxLjUy_/s320/Screen-Shot-2019-05-24-at-7.10.56-PM.png",
     "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/La Perfección.html"
-  },
+  }
 ]
