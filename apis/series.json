@@ -66,6 +66,19 @@
     "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/series/Estamos muertos.html"
   },
   {  
+    "id": "A182",
+    "all": "all",
+    "title": "Jaguar",
+    "genero": "Drama",
+    "categoria": "Serie",
+    "puntuacion": "6.8",
+    "fecha": "22 de septiembre de 2021",
+    "resumen": "(Pieza de época, Drama) - En los años 60, España albergaba a cientos de nazis refugiados tras la Segunda Guerra Mundial. Isabel Garrido, una joven española que logró sobrevivir al campo de concentración de Mauthausen, busca al hombre más peligroso de Europa.",
+    "urlImg": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/eYHdtR2UmKW61wk3NNUNehSRa4J.jpg",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbKSMcTp5aDKnI-xz4gqI1s1b7nLZQbbNet6HgrNmx6LcZhN3Vb6wFgE_SLI65E70WJ30mhG5BIQ3uQ3PoHNO0apZ2VZIUBwapLYwNdbrBEazOXaL8pNScxFsChKAmrZWaC4j8vkqwkNKSmTBF0Bo2PziUfDjLoMo0GXln-N3uEWmNBhY52Ai3IlLa/s320/jaguar.jpg",
+    "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/series/Jaguar.html"
+  },
+  {  
     "id": "A180",
     "all": "all",
     "title": "The Witcher",
