@@ -51,5 +51,18 @@
     "urlImg": "https://image.tmdb.org/t/p/w500/izIMqapegdEZj0YVDyFATPR8adh.jpg",
     "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgX3AE_lHAZQ-PJmA4NYk4LfU9YuPxxMps3l57FZuajCBsDJSqooAv4Aps9UgVMwMXfsDlGnvb28xi4klDvKjmCzOc6QI23NNkYydqbRanClnCuqb-VgT4uwnnAoNUZWi5ZKhclXVN4bNgOpzUyhl2UDHEA4qI2WkmYY5w9_kiHsmhTqRxQYaSI64cK/s320/1366_2000.jpg",
     "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/series/Vikingos Valhalla.html"
+  },
+  {  
+    "id": "A180",
+    "all": "all",
+    "title": "The Witcher",
+    "genero": "Accion",
+    "categoria": "Serie",
+    "puntuacion": "6.2",
+    "fecha": "20 de diciembre de 2019",
+    "resumen": "(Fantasía, Drama, Acción) - El brujo Geralt, un cazador de monstruos, trata de encontrar su lugar en un mundo en el que las personas suelen ser más malvadas que las bestias.",
+    "urlImg": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/gvn0m0LCIslrURjSo7UG5Rx6mV2.jpg",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv31xxOSb4jY52UudS_4lqFe6ECGs4tahAIse1rO7Db2nfBKDZq3RRo7bs6DPMeVYSMaFt5mrTokRYzMrCG33FF8k1gpcUG1WNIDbe_mSVHb06rZLi0iqQT5aZkH7jD3vnmIJnfa-6L9Tjc2DZpSQ8sqbnkJs5S2NjeQ2MPC0k8BVK75TmVfqsFgX0/s320/the-witcher-personajes-1578432294.jpg",
+    "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/series/The Witcher.html"
   }
 ]
