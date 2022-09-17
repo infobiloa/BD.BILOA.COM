@@ -1,5 +1,18 @@
 [
   {  
+    "id": "A067",
+    "all": "all",
+    "title": "El Patriota",
+    "genero": "Belico",
+    "categoria": "Pelicula",
+    "puntuacion": "6.4",
+    "fecha": "27 de junio de 2000",
+    "resumen": "(Bélico, Acción)-La pacífica vida que lleva la familia Martin se ve interrumpida al gestarse la rebelión independentista contra Inglaterra. Gabriel, hijo mayor de Benjamin, se alista, y luego, Benjamin, se verá también obligado a coger las armas.",
+    "urlImg": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/cizgIaq65fpq2Ft08dPmZtUxDYv.jpg",
+    "urlImgDes": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFIn81d4eLqAvxv7oOAHn_xJEnppYfomd7zGgTh2jW6X1SJ_KiKJgrV0JXmtooDW1r3C1Wt9nnTvJppVNWgycR5CDai4Ubvoz7snPjgUaCcP-uYdV9949mJTRVgvyTgN3i3efRdMZeNPBdlefqcXKuZjdqwTKXBSZWLItx-eOj-_cIpeB6ElNXUJ2M/s320/El_patriota-391878869-large.jpg",
+    "linkVideo": "https://infobiloa.github.io/BD.BILOA.COM/peliculas/El Patriota.html"
+  },
+  {  
     "id": "A279",
     "title": "El ultimo ataque de Hitle",
     "genero": "Belico",
