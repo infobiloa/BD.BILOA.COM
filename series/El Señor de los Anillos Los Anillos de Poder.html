@@ -123,6 +123,7 @@ fullscreen = function(e){
  };
 function btnAtras(){
     document.getElementById("modal-coments").style.left="-100%"
+    
 }
 function coments(){
     document.getElementById("modal-coments").style.left="0"
@@ -195,6 +196,7 @@ function pintar(data){
 
 function cerrarX(){
     document.querySelector(".co-video").style.left="-100%";  
+    document.getElementById("frame").src = "";
 }
 const subMenuBtn = document.querySelectorAll(".submenu-btn");
     for(let i=0; i < subMenuBtn.length; i++){
