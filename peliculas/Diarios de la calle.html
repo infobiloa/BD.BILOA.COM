@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://loadigital.github.io/movies-biloa.comv2/css/style.css">
     <link rel="stylesheet" href="https://loadigital.github.io/movies-biloa.comv2/icons/bootstrap-icons.css">
     <script src="https://loadigital.github.io/movies-biloa.comv2/js/jquery.js"></script>
+
+   
 </head>
 <body>
     <header>
@@ -79,26 +81,27 @@
         </div><!--buscador-->
     <!--video-->
     <div class="co-video">
-        <div class="co-buton-x">
-            <i class="bi-x-circle-fill" onclick="cerrarX()"></i>
-        </div>
         
-       <div class="co-img-play-1">
+        
+        <!--<div class="co-img-play-1">
             <p style="color:#ddc700;">Este video contiene ventanas emergentes con publicidad, no te molestes porque es así como podemos mantener este servicio gratuito, esperamos que nos comprendas.</p>
-            <a href="#"><i class="bi-play-circle" id="insertPeli"></i></a>
-         </div>
+            <a target="_blank" href="http://lyksoomu.com/6U4Q"><i class="bi-play-circle" id="insertPeli"></i></a>
+         </div>-->
          
          
-        <div class="video" >         
-            <iframe  src="loadPage.htm" name="insertPage"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=640 height=360 allowfullscreen allow="autoplay" ></iframe> 
+        <div class="video" > 
+            <div class="co-buton-x">
+                <i class="bi-x-circle-fill" onclick="cerrarX()"></i>
+            </div>        
+            <video controls class="play-iframe" poster="https://www.themoviedb.org/t/p/original/n7zm7vcZ5m2nSV9Scyh2axpY8d4.jpg">
+                <source src="//redirector.gdrivecdn.me/drive/index.php?id=UqynpoCRi4RbKMOAL14PIQg1veH9Gmt8mwbspB9DPYRHRL2niqusQzqWRyVDO1jG95SVA7XG8ohbHP%2ByjYp1iSuJO9%2BWycjsP0fg8F8til%2FoaiQLsexCbkNehe6zH2JBnrES0zI81AP9LTq%2FM5c%2Fys%2FoF6lTNe9ZJZeitKyRuv75rUg3CGmq1wHwnvKZAuxiYKZAVQ9p%2FBAz3MeHZkF2uyOPfd7628tYN5eINlYhkYPA%3D%3D&ref=&sandbox=&t=1665633107245&ref=&res=720" type="video/mp4">
+            </video>    
         </div>
         <!--sandbox="allow-scripts allow-same-origin"-->
 
         <!--
-        <div class="video" >
-            <video controls poster="https://www.themoviedb.org/t/p/w533_and_h300_bestv2/dn7fmHjj3DCR3Beytt9V7N6xNnt.jpg" id='frame' class="play-iframe">
-                <source src="https://www.googleapis.com/drive/v3/files/1LvQEg5xgmUnNnD9GJhzn-3WNQ8cEmwi4?alt=media&key=AIzaSyB6C5-0MaMFwK8tYQ8HDMUBmz9m_PCjI-s" type="">
-            </video>        
+        <div class="video" >         
+            <iframe sandbox="allow-scripts allow-same-origin" src="loadPage.htm" name="insertPage"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=640 height=360 allowfullscreen allow="autoplay" ></iframe> 
         </div>
     -->
     </div>
@@ -111,6 +114,8 @@
     </div>
 
 <script>//javascript
+
+
 fullscreen = function(e){
     if (e.webkitRequestFullScreen) {
       e.webkitRequestFullScreen();
@@ -124,11 +129,11 @@ function btnAtras(){
 function coments(){
     document.getElementById("modal-coments").style.left="0"
 }
-const insertPeli = document.getElementById("insertPeli");
- insertPeli.addEventListener("click", function(){
-    document.querySelector(".co-img-play-1").style.display="none" 
+//const insertPeli = document.getElementById("insertPeli");
+ //insertPeli.addEventListener("click", function(){
+    //document.querySelector(".co-img-play-1").style.display="none" 
     //fullscreen(document.getElementById('frame'));  
- });
+ //});
 
 const poster = document.getElementById("poster");
 const  API_KEY  =  'api_key=d092eba29fbb5fe6130283f8e1934752' ;
@@ -184,7 +189,7 @@ function pintar(data){
         <div class="co-title-poster"><p class="title--">${data.genres[0].name}, ${data.genres[1].name}</p></div>
         <div class="co-title-poster"><p class="title--"><i class="bi-star-fill"></i> <i class="bi-star-half"> </i><i class="bi-star"></i> ${data.vote_average.toFixed(1)}</p></div>
         <div class="co-title-poster"><p class="title--">${x.horas}h ${x.minutos}m</p></div>
-        <div class="co-title-poster"><a target="insertPage" href="https://infobiloa.github.io/PlayDrive/?id=1FySV05j1Okd1q3fjs_3s6c7IrOpHfJlJ"><button onclick="play()">VER AHORA</button></a></div>
+        <div class="co-title-poster"><a  target="_blank" href="http://lyksoomu.com/6U4Q"><button onclick="play()">VER AHORA</button></a></div>
         <!--<div class="co-title-poster"><button><a class="download" href="#">Download</a></button></div>-->
         
     </div>
