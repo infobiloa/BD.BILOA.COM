@@ -92,15 +92,7 @@
 
         poster.appendChild(resumen);
 
-        const co_v_p = document.createElement("div");
-        co_v_p.className = "co-video"
-        co_v_p.innerHTML = `
-        <div class="co-frame">
-                <iframe src="${element.TRAILER}" name="insertPage"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=640 height=360 allowfullscreen allow="autoplay" ></iframe> 
-        </div>
-        
-        `
-        video_pelicula.appendChild(co_v_p);
+        );
 
         const co_v = document.createElement("div");
         co_v.className = "co-video"
@@ -116,12 +108,7 @@
     };
     });
   
-  function play(){
-    document.querySelector(".co-video").style.display="flex";
-    document.querySelector(".trailer").style.display="none";
-    document.getElementById("co-video").style.display="none";
-  }
-
+  
  
 </script>
 </body>
