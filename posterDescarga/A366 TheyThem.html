@@ -31,7 +31,7 @@
         <div class="co-video" id="co-video"></div>
     </div>
 <!--javascript-->
-    <script src="https://loadigital.github.io/movies.biloa/js/db.js"></script>
+    
     <script>
    
 
@@ -40,9 +40,20 @@
     const video = document.getElementById("co-video");
     const video_pelicula = document.getElementById("co-video-pelicula");
     
-    const codigo = Object.values(db);
-
-    codigo.forEach(element => {
+    document.addEventListener('DOMContentLoaded', () => {
+    fetchData();
+    });
+    const fetchData = async () => {
+    try{
+        const res = await fetch('https://loadigital.github.io/movies.biloa/js/api_db.json');
+        const data = await res.json();
+        movies(data);
+    }catch (error) {
+        console.log(error);
+    };
+};
+const movies = data =>{
+    data.forEach(element => {
     //poner id aqui...
     if(element.id === "A366"){
 
@@ -93,6 +104,7 @@
     };
     };
     });
+    };
 </script>
 <script type='text/javascript' src='//recordfunny.com/d8/23/85/d82385143485bdc3bb371931dbdce008.js'></script>
 <script type='text/javascript' src='//recordfunny.com/90/a6/0f/90a60f7d8df42a528b104be8e2c98785.js'></script>
