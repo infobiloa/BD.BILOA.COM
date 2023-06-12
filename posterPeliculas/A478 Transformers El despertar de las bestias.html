@@ -21,9 +21,7 @@
     <!--poster-->
 
     <div class="co-poster" id="co-poster">
-        <div style="margin-top: 290px;@media screen and (max-width: 800px){.poster{
-            margin-top: 450px;
-        }}" class="poster" id="poster"></div>
+        <div  class="poster" id="poster"></div>
         
         <div class="trailer"><h3>Tráiler</h3></div>
         <div class="co-video" id="co-video"></div>
@@ -87,17 +85,10 @@ const movies = data =>{
         <style>
         #co-poster{
           background: linear-gradient(rgba(0,0,0,0.2) 0%,rgb(0, 0, 0) 100%),
-          url(${IMG_URL + data.backdrop_path});
+          url(${IMG_URL + data.poster_path});
           background-repeat: no-repeat;
           background-size: 100%;
           height: 40.62em;
-        }
-        @media screen and (min-width: 800px){
-            #co-poster{
-                height: 18.62em;
-            } 
-            
-
         }
         </style>
                 <div class="detalle-poster"><h3>${data.title}</h3></div>
