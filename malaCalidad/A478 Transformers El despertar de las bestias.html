@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Peliculas</title>
+    <link rel="stylesheet" href="https://loadigital.github.io/movies.biloa/css/index-pelis-mc.css">
+    <link rel="stylesheet" href="https://loadigital.github.io/movies.biloa/icon/bootstrap-icons.css">
+</head>
+<body>
+  
+     <div class="co-img-play">
+        <div class="img-play">
+            <a target="insertPeli" href="https://ok.ru/videoembed/5838434273880"><i class="bi-play-circle" id="insertPeli"></i></a>
+        </div>
+     </div>
+
+    <div class="co-main-peliculas" id="co-main-peliculas">
+        
+        <div class="co-fra-me" >
+            <iframe src="loadPage.htm" name="insertPeli"  id='f-peli' class="play-peli" frameborder=0 marginwidth=0 marginheight=0 scrolling=yes width=640 height=360 allowfullscreen ></iframe> 
+        </div>
+    </div>
+    <script>
+        function botomm(){
+    document.getElementById("modal-formulario").style.bottom= "0";
+};
+    
+fullscreen = function(e){
+    if (e.webkitRequestFullScreen) {
+      e.webkitRequestFullScreen();
+    } else if(e.mozRequestFullScreen) {
+      e.mozRequestFullScreen();
+    };
+ };
+
+ const insertPeli = document.getElementById("insertPeli");
+ insertPeli.addEventListener("click", function(){
+    document.getElementById("co-main-peliculas").style.right="0";
+    fullscreen(document.getElementById('f-peli'));
+    
+ })
+    </script>
+</body>
+</html>
