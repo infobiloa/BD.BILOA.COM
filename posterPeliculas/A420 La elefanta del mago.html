@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://loadigital.github.io/movies.biloa/css/style-poster.css">
+    <link rel="stylesheet" href="https://loadigital.github.io/movies.biloa/icon/bootstrap-icons.css">
+    <title>Peliculas</title>
+    
+</head>
+<body>
+    
+    <!--header-->
+    <header>
+        <div class="header">
+            <div class="co-icon-p"><a href="https://loadigital.github.io/movies.biloa/index.html"><i class="bi-arrow-left-short"></i></a></div>
+            <div class="co-title-p"><label></label></div>
+        </div>
+    </header>
+    <!--poster-->
+
+    <div class="co-poster" id="co-poster">
+        
+        <div  class="poster" id="poster"></div>
+        
+    
+        <div class="trailer"><h3>Tráiler</h3></div>
+        <div class="co-video" id="co-video"></div>
+        
+    </div>
+<!--javascript-->
+    
+    <script>
+    //scroll
+    const ani = window.addEventListener("scroll", function(){
+    const cabecera = document.querySelector("header");
+    cabecera.classList.toggle("ani--header",window.scrollY>0);
+        });
+
+    //poster
+    const poster = document.getElementById("poster");
+    const video = document.getElementById("co-video");
+    document.addEventListener('DOMContentLoaded', () => {
+    fetchData();
+    });
+const fetchData = async () => {
+    try{
+        const res = await fetch('https://loadigital.github.io/movies.biloa/js/api_db.json');
+        const data = await res.json();
+        movies(data);
+    }catch (error) {
+        console.log(error);
+    };
+};
+const movies = data =>{
+
+    data.forEach(element => {
+    //poner id aqui...
+    if(element.id === "A420"){
+
+    const  API_KEY  =  'api_key=d092eba29fbb5fe6130283f8e1934752' ;
+    const  BASE_URL  =  'https://api.themoviedb.org/3' ;
+    const  API_URL  =  BASE_URL  +  '/movie/' + element.id_POST + '?' + API_KEY + '&language=es-ES';//CODIGO TMBD
+    const  IMG_URL  =  'https://image.tmdb.org/t/p/w500' ;
+    
+    getMovie(API_URL);
+    
+    function getMovie(url){
+        fetch(url).then(res => res.json()).then(data =>{
+            console.log(data)
+            pintar(data);
+        });
+    };
+    
+    function pintar(data){
+    
+        function calHora(minutos){
+            let horas = Math.floor(minutos / 60);
+            let minutosRes = minutos % 60;
+            return {horas, minutos: minutosRes};
+        };
+            let x = calHora(data.runtime);
+    
+        const resumen = document.createElement("div");
+      
+        resumen.innerHTML = `
+        <style>
+        #co-poster{
+          background: linear-gradient(rgba(0,0,0,0.2) 0%,rgb(0, 0, 0) 100%),
+          url(${IMG_URL + data.poster_path});
+          background-repeat: no-repeat;
+          background-size: 100%;
+          height: 40.62em;
+        }
+        </style>
+                <div class="detalle-poster"><h3>${data.title}</h3></div>
+                <div class="detalle-poster"><i class="bi-star-fill"></i><i class="bi-star-half"></i><i class="bi-star"></i><p class="puntuacion"> ${data.vote_average.toFixed(1)}</p></div>
+                <div class="detalle-poster co-est-dur"><p>${data.release_date} - ${x.horas}h ${x.minutos}m</p></div>
+                <div class="detalle-poster"><p>${element.genres}</p></div>
+                <div class="detalle-poster t-sipnosis"><p>${data.overview}</p></div>
+                <div class="detalle-poster co-button"><a href="#"><button onclick="play()"  class="bi-play-circle-fill"> Ver Ahora</button></a></div>
+                <div class="detalle-poster co-button"><a href="${element.POSTER_DESCARGA}"><button class="bi-cloud-arrow-down-fill"> Descargar</button></a></div>
+        
+         `
+
+
+        poster.appendChild(resumen);
+        const co_modal = document.getElementById("modal-1");
+        const modal = document.createElement("div");
+        modal.innerHTML = `
+                
+                <div class="modal-title" ><h3>Servidores disponibles</h3></div>
+                <div class="modal-title"><li>Este contenido tiene anuncios...</li></div>
+                <div class="modal-title"><li>Español Latino</li> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy2pflGFCaK0SdzF4uRUIRctlN62FjtmilsjegLDbAmOxKELxuYgUP47fETcZIpZ6R8R_T51_RTsg59oIYKpZykWMsXShlN489wTodWpk9ceL46pCHryw2cOLM7u09VzbFuHXZunPy-oS7KXlFEscfUWw9SH57jTRopZNZGWlfyD01T6QKEysUf-vM/s1200/bf3c651f9f1256c9701c7e91ad53a2bd.jpg" alt=""></div>
+                <div class="modal-button"><a href="${element.LINK_MOVIES}"><button class="bi-play-circle-fill"> Player.v1</button></a></div>
+                <div class="modal-button"><a href="${element.LINK_MOVIES_1}"><button class="bi-play-circle-fill"> Player.v2</button></a></div>
+                <div class="modal-button"><a href="${element.LINK_MOVIES_2}"><button class="bi-play-circle-fill"> Player.v3</button></a></div>
+                <div class="modal-button"><button onclick="cerrar()" class="bi-x-circle-fill"> Cerrar</button></div>
+                
+        
+        `
+        co_modal.appendChild(modal);
+        
+        const co_v = document.createElement("div");
+        co_v.className = "co-video"
+        co_v.innerHTML = `
+        <div class="co-frame">
+                <iframe src="${element.TRAILER}" name="insertPage"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=640 height=360 allowfullscreen allow="autoplay" ></iframe> 
+        </div>
+        
+        `
+        video.appendChild(co_v);
+       
+    };
+    };
+    });
+    };
+</script>
+
+
+
+<div class="co-modal" id="co-modal">
+    <div class="main-modal">
+        <div class="modal-anuncios">
+            
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : '69eb751d740c6a4de71831894def8c64',
+                        'format' : 'iframe',
+                        'height' : 90,
+                        'width' : 728,
+                        'params' : {}
+                    };
+                    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://recordfunny.com/69eb751d740c6a4de71831894def8c64/invoke.js"></scr' + 'ipt>');
+                </script>
+           
+        </div>
+    
+        <div class="modal" id="modal-1"></div>
+        <div class="modal-anuncios">
+            
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : '69eb751d740c6a4de71831894def8c64',
+                        'format' : 'iframe',
+                        'height' : 90,
+                        'width' : 728,
+                        'params' : {}
+                    };
+                    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://recordfunny.com/69eb751d740c6a4de71831894def8c64/invoke.js"></scr' + 'ipt>');
+                </script>
+           
+        </div>
+    </div>
+    
+    
+</div>
+
+<script>
+     function play(){document.getElementById("co-modal").style.top="0px";};
+     function cerrar(){document.getElementById("co-modal").style.top="-100%";}
+</script>
+</body>
+</html>
