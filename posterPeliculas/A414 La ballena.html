@@ -23,7 +23,7 @@
 
     <div class="co-poster" id="co-poster">
         <div  class="poster" id="poster"></div>
-        <div class="trailer"><h3>Tráiler</h3></div>
+        <!--<div class="trailer"><h3>Tráiler</h3></div>-->
         <div class="co-video" id="co-video"></div>
         
         <!--recomendados-->
@@ -88,9 +88,15 @@ const fragment = document.createDocumentFragment();
                     img1.id = element.id;
                     const a = document.createElement("a");
                     a.href = element.posterLink;
+                    const c_p = document.createElement("div");
+                    c_p.className = "title-cards"
+                    const _p = document.createElement("p");
+                    _p.textContent = element.title;
+                    c_p.appendChild(_p)
                     div.appendChild(img1);
                     a.appendChild(img1)
                     div.appendChild(a);
+                    div.appendChild(c_p);
                     const clone = div.cloneNode(true); 
                     fragment.appendChild(div);
                     moviesRecomendadas.appendChild(fragment)
@@ -173,50 +179,39 @@ const movies = data =>{
                 <div class="detalle-poster co-est-dur"><p>${data.release_date} - ${x.horas}h ${x.minutos}m</p></div>
                 <div class="detalle-poster"><p>${element.genres}</p></div>
                 <div class="detalle-poster t-sipnosis"><p>${data.overview}</p></div>
-                <div class="detalle-poster co-button"><a href="#"><button onclick="play()"  class="bi-play-circle-fill"> Ver Ahora</button></a></div>
+               <!-- <div class="detalle-poster co-button"><a href="#"><button onclick="play()"  class="bi-play-circle-fill"> Ver Ahora</button></a></div>-->
                 <div class="detalle-poster co-button"><a href="${element.POSTER_DESCARGA}"><button class="bi-cloud-arrow-down-fill"> Descargar</button></a></div>
-        
-         `
-
-        
-        poster.appendChild(resumen);
-        const co_modal = document.getElementById("modal-1");
-        const modal = document.createElement("div");
-        modal.innerHTML = `
-                <div class="modal-button-1"><button onclick="cerrar()" class="bi-x-circle-fill"> Cerrar</button></div>
-                <div class="modal-title" ><h3>Servidores disponibles</h3></div>
-                <div class="modal-title"><li>Este contenido tiene anuncios...</li></div>
-                <div class="modal-title"><li>Español Latino</li> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy2pflGFCaK0SdzF4uRUIRctlN62FjtmilsjegLDbAmOxKELxuYgUP47fETcZIpZ6R8R_T51_RTsg59oIYKpZykWMsXShlN489wTodWpk9ceL46pCHryw2cOLM7u09VzbFuHXZunPy-oS7KXlFEscfUWw9SH57jTRopZNZGWlfyD01T6QKEysUf-vM/s1200/bf3c651f9f1256c9701c7e91ad53a2bd.jpg" alt=""></div>
                 <!--DEPLOY NEXT-->
                 <div class="deploy--">
-                <div class="modal-button-1 submenu-btn-deploy"><a href="#"><button class="bi-chevron-down" > SERVIDORES</button></a></div>
+                <div class="modal-button-1 submenu-btn-deploy"><button class="bi-play-circle-fill" > Ver Ahora</button></div>
                 <div class="cont-deploy" >
-                <div class="modal-button"><a target="insertPage" href="${element.LINK_MOVIES_0}"><button class="bi-play-circle-fill"> Player.v1</button></a></div>
-                <div class="modal-button"><a target="insertPage" href="${element.LINK_MOVIES_1}"><button class="bi-play-circle-fill"> Player.v2</button></a></div>
-                <div class="modal-button"><a target="insertPage" href="${element.LINK_MOVIES_2}"><button class="bi-play-circle-fill"> Player.v3</button></a></div>
+                <div class="modal-button"><a class="next" target="insertPage" href="${element.LINK_MOVIES_0}"><button data="next" class="bi-play-circle-fill"> Player.v2</button></a></div>
+                <div class="modal-button"><a class="next" target="insertPage" href="${element.LINK_MOVIES_1}"><button data="next" class="bi-play-circle-fill"> Player.v2</button></a></div>
+                <div class="modal-button"><a class="next" target="insertPage" href="${element.LINK_MOVIES_2}"><button data="next" class="bi-play-circle-fill"> Player.v2</button></a></div>
                 
-                </div>
-                </div>
+         `
+         const co_modal = document.getElementById("modal-1");
+         poster.appendChild(resumen);
         
-        `
-        co_modal.appendChild(modal);
-
-        const co_p = document.createElement("div");
-        co_p.className = "co-video"
-        co_p.innerHTML = `
-        <div class="co-frame">
-                <iframe src="${element.TRAILER}" name="insertPage"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=640 height=360 allowfullscreen allow="autoplay" ></iframe> 
-        </div>
         
-        `
-        co_modal.appendChild(co_p);
+        const next = document.querySelectorAll('.next button[data^="next"')
+        next.forEach(next =>{
+        next.addEventListener("click", function(){
+            const _dip = document.querySelector(".cont-deploy");
 
+            if (_dip.classList.contains("deploy")) {
+                _dip.classList.remove("deploy");
+                _dip.removeAttribute("style");
+            };
+            
+            });
+            });
         
         const co_v = document.createElement("div");
         co_v.className = "co-video"
         co_v.innerHTML = `
         <div class="co-frame">
-                <iframe src="${element.TRAILER}"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=640 height=360 allowfullscreen allow="autoplay" ></iframe> 
+                <iframe src="${element.TRAILER}" name="insertPage"  id='frame' class="play-iframe" frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=640 height=360 allowfullscreen allow="autoplay" ></iframe> 
         </div>
         
         `
@@ -249,44 +244,6 @@ const movies = data =>{
     };
 </script>
 
-
-
-<div class="co-modal" id="co-modal">
-    <div class="main-modal">
-        <div class="modal-anuncios">
-            
-                <script type="text/javascript">
-                    atOptions = {
-                        'key' : '69eb751d740c6a4de71831894def8c64',
-                        'format' : 'iframe',
-                        'height' : 90,
-                        'width' : 728,
-                        'params' : {}
-                    };
-                    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://recordfunny.com/69eb751d740c6a4de71831894def8c64/invoke.js"></scr' + 'ipt>');
-                </script>
-           
-        </div>
-    
-        <div class="modal" id="modal-1"></div>
-        <div class="modal-anuncios">
-            
-                <script type="text/javascript">
-                    atOptions = {
-                        'key' : '69eb751d740c6a4de71831894def8c64',
-                        'format' : 'iframe',
-                        'height' : 90,
-                        'width' : 728,
-                        'params' : {}
-                    };
-                    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://recordfunny.com/69eb751d740c6a4de71831894def8c64/invoke.js"></scr' + 'ipt>');
-                </script>
-           
-        </div>
-    </div>
-    
-    
-</div>
 
 <script>
      function play(){document.getElementById("co-modal").style.left="0px";};
